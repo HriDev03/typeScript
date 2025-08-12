@@ -3,7 +3,7 @@
 //object
 console.log("////////////////////////////////////////////////////////");
 console.log("let learn obj ...................");
-
+//object ke andar hii uska type define karna padega
 const personn:{
     firstName : string;
     age : number;
@@ -21,7 +21,7 @@ const personn:{
 }
 
 // agar koi property exist nahi karti and we're using it 
-// then we will get undefined but in case of Js we will be getting error
+// then we will get undefined in case of JS but in case of TS it will show us an error
 console.log(personn);
 
 console.log("////////////////////////////////////////////////////////");
@@ -30,17 +30,19 @@ console.log("Learning Array rn ..........");
 const person:{
     firstName : string ;
     age : number ;
-    skills:string[] //array of strings hai  
+    //array of strings hai  
+    skills:string[];
 }={
     firstName:"Hri",
     age:21,
-    skills:["AWS","ReactJS"," NodeJs"]  
+    skills:["AWS","ReactJS"," NodeJs","Docker"]  
 }
 
 let favourite_Language:string[];
 favourite_Language=["Js","Cpp","ReactJs","Dogri","Hindi","English"]
 
-//to type safety 
+//to type safety agar yaha kuch bhi aa sakta hai, choose data type any
+// but we are loosing type safety here
 let favourite_Language2:any[];
 favourite_Language2=["Js","Cpp","ReactJs",14,true,"English"]
 
@@ -49,13 +51,13 @@ console.log(person);
 
 // Tuple
 console.log("////////////////////////////////////////////////////////");
-
 console.log("Learning tuple .............. ");
 
 const human:{
     name:string;
     age:number;
     skills:string[];
+    //fixed array of type : TUPLE
     //this is a tuple with fixed number of elements 
     //and specific data types for each position
     //fixed array of two types :0->Number , 1->string
@@ -66,7 +68,7 @@ const human:{
     age:21,
     skills:["ReactJs","Node","Ts"],
     //roduct mai 2 cheeze hongi number , string
-    product:[10,"Macbook M2"]
+    product:[10,"Macbook M2 Midnight"]
 }
 
 console.log(human.product[1]);
@@ -76,7 +78,7 @@ console.log(human.product[1]);
 console.log("////////////////////////////////////////////////////////");
 
 console.log("Learning Enums....................");
-
+// jaha variables can be of a fixed value
 enum Role{ ADMIN , AUTHOR , READ_USER_ONLY }
 
 const insaan={

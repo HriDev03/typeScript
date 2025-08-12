@@ -1,0 +1,14 @@
+WHAT IS TYPESCRIPT AND WHY IT IS NEEDED?
+we will define type of all the variables, will not have unexpected errors
+
+HOW TO RUN TS CODE : 
+Browser ko ts samajh nahi aata , soo first 
+TS converts to JS and then it is exected , it is compiler using command tcs app.ts
+
+// type script core data types : number,strings,boolean
+
+compile time errors: Agar humm code likh rahe hai , tabh uss time mai error nahi dikhte
+
+run time errors : jabh humm code likh rahe hai , and agar koi error aaye toh ts uss time pe errors show krr deta hai 
+
+                                                                                                                                       

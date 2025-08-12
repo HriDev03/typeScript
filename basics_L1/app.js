@@ -1,7 +1,7 @@
 //function to have sum of two numbers
 function add(num1, num2, printRes, someText) {
     if (printRes) {
-        console.log("".concat(someText), num1 + num2);
+        console.log(" ".concat(someText), num1 + num2);
     }
     else {
         return num1 + num2;

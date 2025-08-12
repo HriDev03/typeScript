@@ -10,5 +10,8 @@ TS converts to JS and then it is exected , it is compiler using command tcs app.
 compile time errors: Agar humm code likh rahe hai , tabh uss time mai error nahi dikhte
 
 run time errors : jabh humm code likh rahe hai , and agar koi error aaye toh ts uss time pe errors show krr deta hai 
+we cant give a direct object as a type, because agar type mai object de diya toh it can be anything 
+it can be {} or it can have any value {fdfsdfsdfsfds}
 
-                                                                                                                                       
+so we dont give datatype as object we can send it in a {}
+
